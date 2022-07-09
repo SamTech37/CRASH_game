@@ -21,7 +21,7 @@ public class ClownEnemy : FollowerEnemy
         if (other.collider.gameObject.GetComponent<PlayerMovement>())
         {
             //slightly changes player's speed
-            player.speed += Random.Range(-0.1f, 0.2f);
+            player.speed += Random.Range(-0.1f, 0.4f);
             
             Death();
         }

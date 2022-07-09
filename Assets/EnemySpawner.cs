@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnAnEnemy()
     {
-        for(int i = 0;i <= waves / 200; i++) // every 200 waves will result in +1 spawn emission.
+        for(int i = 0;i <= waves / 160; i++) // every 160 waves will result in +1 spawn emission.
         {
             Vector2 spawnPos = target.transform.position;
             spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
