@@ -36,7 +36,7 @@ public class SawbladeEnemy : FollowerEnemy
         }
     }
     void OnBecameInvisible(){
-        Destroy(gameObject,1f);
+        Destroy(gameObject,0.5f);
         Instantiate(effect, transform.position, Quaternion.identity);
         Instantiate(juice, transform.position, Quaternion.identity);
         explosionSound.Play();
